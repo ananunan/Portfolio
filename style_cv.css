@@ -1,0 +1,166 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Baloo Thambi 2", system-ui;
+	font-optical-sizing: auto;
+  	border: 1px solid red;
+	box-sizing: border-box;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+body
+{
+	background-color: #F5F5F5;
+	border: 10px solid black;
+	margin: 5px 5px 5px 5px;
+	height: 100vh;
+}
+
+nav
+{
+	height: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:left;
+	align-items: center;
+	gap:15px;
+	background-color: #C4C4C4;
+	border-bottom: 3px solid black;
+
+}
+nav a
+{
+	font-size: large;
+	font-weight: 600;
+	padding: 5px 10px;
+	transition: all 0.3s ease;
+}
+
+nav a:hover
+{
+	background-color: black;
+	color: white;
+}
+
+/* SECTION */
+.welcome-text
+{
+	display: flex;
+	justify-content:space-around;
+	border-bottom: 3px solid black;
+	align-items: center;
+}
+
+.hero-container
+{
+	width: 330px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	justify-content: center;
+}
+
+.hero-container h1
+{
+	text-align: left;
+	font-size: 70px;
+	line-height: 60px;
+}
+.hero-container p
+{
+	text-align:left;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 500;
+}
+.hero-container a
+{
+	display: flex;
+	color: black;
+	font-size: 22px;
+	line-height: 60px;
+	font-weight: 700;
+	text-align: right;
+
+}
+.links-container
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: calc(100vh / 2);
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #F5F5F5;
+	z-index: 10;
+}
+.links-container img
+{
+	display: flex;
+	width: 15px;
+	height: 15px;
+}
+
+/* PROJECT */
+
+.project-container
+{
+	width: 330px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	justify-content: center;
+
+}
+/* BUTTONS */
+.btm
+{
+	background-color: #C4C4C4;
+	font-weight: 700;
+	border: 2px solid black;
+	padding: 5px 10px; 
+	width:fit-content;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.btm:hover
+{
+	background-color: black;
+	color: white;
+}
+
+.hiperlink-button
+{
+	flex-direction: row;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	background-color: #C4C4C4;
+	font-weight: 700;
+	border: 2px solid rgb(0, 0, 0);
+	padding: 5px 10px;
+	width:180px;
+	height: 50px;
+	align-content: center;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.hiperlink-button:hover
+{
+	background-color: black;
+	color: white;
+}
+
+.hiperlink-button:hover img
+{
+	filter: invert(1);
+}
