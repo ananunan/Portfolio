@@ -1,48 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- ============================= META & TITLE ============================= -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ana</title>
+	<title>Ana - Portfolio</title>
+	
+	<!-- ============================= EXTERNAL RESOURCES ============================= -->
+	<!-- Main stylesheet -->
 	<link rel="stylesheet" href="style_cv.css">
+	
+	<!-- Google Fonts optimization -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<!--------------------------- Nav Bar ------------------------------>
+	<!-- ============================= NAVIGATION BAR ============================= -->
 	<nav>
-		<img src="Home Button.png" href="" alt="Home" style="height: 40px;"></a> <!--colocar p voltar ao inicio-!-->
+		<!-- Home logo/button (TODO: Make clickable by wrapping in <a> tag) -->
+		<img src="Home Button.png" alt="Home" style="height: 40px;">
+		
+		<!-- Main navigation links -->
 		<a href="#projects">Projects</a>
 		<a href="#aboutme">About me</a>
 		<a href="#technical-skills">Technical Skills</a>
 		<a href="#find-me">Find me</a>
 	</nav>
-<!------------------------------------------------------------------>
 
+	<!-- ============================= HERO/LANDING SECTION ============================= -->
 	<section class="welcome-text">
+		<!-- Left side: Main content -->
 		<div class="hero-container">
+			<!-- Main greeting and name -->
 			<h1>&lt;Hello/&gt;<br>I'm Ana.</h1>
-			<p>Criminology grad exploring programming and tech *>* </p>
-			<button class="btm">Download my CV</button> <!--colocar o download do cv-!-->
+			
+			<!-- Professional tagline -->
+			<p>Criminology grad exploring programming and tech *>*</p>
+			
+			<!-- Action button (TODO: Add CV file download functionality) -->
+			<button class="btm">Download my CV</button>
+			
+			<!-- Section label -->
 			<a>Quick Links</a>
 		</div>
+		
+		<!-- Right side: Profile image -->
 		<div class="image-container">
-			<img src="Home_Photo.png" alt="image" width="400" height="400">
+			<img src="Home_Photo_Pink.png" alt="Ana's profile photo" width="400" height="400">
 		</div>
 	</section>
-	<div class="links-container">
-			<a class="hiperlink-button" href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer">LinkedIn
-			<img src="Vector.png" alt="LinkedIn" class="icon"></a>
-			<a class="hiperlink-button" href="https://github.com/ananunan" target="_blank" rel="noopener noreferrer">GitHub
-			<img src="Vector.png" alt="GitHub" class="icon"></a>
-			<a class="hiperlink-button" href="COLOCAR LINK P LOCAL DA PAG" target="_blank" rel="noopener noreferrer">Contact
-			<img src="Vector.png" alt="Contact" class="icon"></a><!--colocar o caminho p contact !-->
-		</div>
 
-		<div class="project-container">
-			<p>Projects</p>
+	<!-- ============================= SOCIAL LINKS OVERLAY ============================= -->
+	<div class="links-container">
+		<!-- LinkedIn profile -->
+		<a class="hiperlink-button" href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer">
+			LinkedIn
+			<img src="Vector.png" alt="LinkedIn icon" class="icon">
+		</a>
+		
+		<!-- GitHub profile -->
+		<a class="hiperlink-button" href="https://github.com/ananunan" target="_blank" rel="noopener noreferrer">
+			GitHub
+			<img src="Vector.png" alt="GitHub icon" class="icon">
+		</a>
+		
+		<!-- Contact link (TODO: Create contact section/page) -->
+		<a class="hiperlink-button" href="#contact" target="_blank" rel="noopener noreferrer">
+			Contact
+			<img src="Vector.png" alt="Contact icon" class="icon">
+		</a>
+	</div>
+
+	<!-- ============================= PROJECTS SECTION ============================= -->
+	<section id="projects" class="projects-section">
+		<h2>Projects</h2>
+		<div class="projects-container">
+			
+			<!-- MiniShell Project -->
+			<div class="project-box">
+				<div class="project-header">
+					<span>2025-05-31-minishell/a.out</span>
+				</div>
+				<div class="project-image">
+					<img src="minishell.png" alt="MiniShell terminal preview">
+				</div>
+				<div class="project-content">
+					<h3>MiniShell</h3>
+					<p>Project focused on creating a custom command-line shell that mimicked key Bash features like command execution and input/output redirection. It required a strong understanding of Unix process management and system calls in C, enhancing skills in low-level systems programming and operating system concepts.</p>
+					<!-- Reusing hyperlink button style -->
+					<a href="#" class="hiperlink-button">
+						View project
+						<img src="Vector.png" alt="External link icon" class="icon">
+					</a>
+				</div>
+			</div>
+
+			<!-- So_Long Project -->
+			<div class="project-box">
+				<div class="project-header">
+					<span>2024-10-03-so_long.c</span>
+				</div>
+				<div class="project-image">
+					<img src="so_long.png" alt="So_Long game preview">
+				</div>
+				<div class="project-content">
+					<h3>So_Long</h3>
+					<p>A 2D maze game developed using the mlx library in C, where the player navigates through a maze and collects items. The project involved implementing dynamic memory management, handling user input, and optimizing graphics rendering for smooth gameplay.</p>
+					<!-- Reusing hyperlink button style -->
+					<a href="#" class="hiperlink-button">
+						View project
+						<img src="Vector.png" alt="External link icon" class="icon">
+					</a>
+				</div>
+			</div>
+
 		</div>
+	</section>
+	<!-- ============================= FUTURE SECTIONS ============================= -->
+	<!-- TODO: Implement remaining sections -->
+	<!-- 
+		🔸 About me section (#aboutme) - Personal background and story
+		🔸 Technical Skills section (#technical-skills) - Programming languages, tools, etc.
+		🔸 Find me section (#find-me) - Additional contact methods
+		🔸 Contact section (#contact) - Contact form or information
+	-->
+
+	<!-- ============================= FOOTER ============================= -->
+	<footer>
+		<p>&copy; Ana Luisa Nunan - 2025</p>
+	</footer>
 
 </body>
 </html>
