@@ -156,7 +156,6 @@ footer p {
     linear-gradient(to bottom, #c4c4c4 1px, transparent 1px);
   background-size: 7px 7px;
   border: 3px solid black;
-
 }
 
 .projects-section h2 {
@@ -196,14 +195,12 @@ footer p {
   position: relative;
 }
 
-/* Image positioned to the left */
 .project-header img {
   position: absolute;
   left: 10px;
   height: 26px;
 }
 
-/* Text centered */
 .project-header span {
   text-align: center;
 	font-weight: bold;
@@ -612,5 +609,150 @@ footer p {
 
 .contact-item span {
 	font-size: 14px;
+}
+
+/* ============================= MOBILE RESPONSIVENESS ============================= */
+@media (max-width: 768px) {
+	/* Body adjustments for mobile */
+	body {
+		margin: 2px;
+		border: 5px solid black;
+	}
+
+	/* Navigation mobile */
+	nav {
+		height: auto;
+		flex-wrap: wrap;
+		padding: 10px;
+		gap: 10px;
+	}
+
+	nav a {
+		font-size: 16px;
+		padding: 8px 12px;
+	}
+
+	nav a img {
+		height: 30px;
+	}
+
+	/* Hero section mobile */
+	.welcome-text {
+		flex-direction: column;
+		padding: 20px;
+		gap: 20px;
+	}
+
+	.hero-container {
+		width: 100%;
+		text-align: center;
+	}
+
+	.hero-container h1 {
+		font-size: 48px;
+		line-height: 45px;
+	}
+
+	.hero-container a {
+		margin-left: 0;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.image-hero-container img {
+		width: 280px;
+		height: 280px;
+	}
+
+	/* Social links mobile */
+	.links-container {
+		position: static;
+		transform: none;
+		flex-direction: column;
+		gap: 10px;
+		margin: 20px 0;
+	}
+
+	.hiperlink-button {
+		width: 100%;
+		height: auto;
+		padding: 15px;
+	}
+
+	/* Projects section mobile */
+	.projects-section {
+		padding: 20px 10px;
+	}
+
+	.projects-container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.project-box {
+		width: 100%;
+	}
+
+	/* About me section mobile */
+	.aboutme-section {
+		padding: 20px 10px;
+	}
+
+	.aboutme-container {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.card-container {
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.skills-grid {
+		grid-template-columns: repeat(3, 60px);
+		grid-template-rows: repeat(4, 60px);
+		gap: 10px;
+		justify-self: center;
+	}
+
+	.skill-box {
+		width: 60px;
+		height: 60px;
+	}
+
+	.skill-box i {
+		font-size: 40px;
+	}
+
+	/* Contact section mobile */
+	.contact-section {
+		padding: 20px 10px;
+	}
+
+	.contact-container {
+		flex-direction: column;
+		gap: 30px;
+		align-items: stretch;
+	}
+
+	.contact-form-container,
+	.contact-info {
+		flex: none;
+		width: 100%;
+	}
+
+	.contact-card {
+		width: 100%;
+	}
+
+	/* Footer mobile */
+	footer {
+		height: auto;
+		padding: 15px;
+	}
+
+	footer p {
+		font-size: 12px;
+	}
 }
 
