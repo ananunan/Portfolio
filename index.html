@@ -22,18 +22,19 @@
 <body>
 	<!-- ============================= NAVIGATION BAR ============================= -->
 	<nav>
-		<!-- Home logo/button (TODO: Make clickable by wrapping in <a> tag) -->
-		<img src="Home Button.png" alt="Home" style="height: 40px;">
+		<!-- Home logo/button -->
+		<a href="#home">
+			<img src="Home Button.png" alt="Home" style="height: 40px;">
+		</a>
 		
 		<!-- Main navigation links -->
 		<a href="#projects">Projects</a>
 		<a href="#aboutme">About me</a>
-		<a href="#technical-skills">Technical Skills</a>
-		<a href="#find-me">Find me</a>
+		<a href="#contact">Contact</a>
 	</nav>
 
 	<!-- ============================= HERO/LANDING SECTION ============================= -->
-	<section class="welcome-text">
+	<section id="home" class="welcome-text">
 		<!-- Left side: Main content -->
 		<div class="hero-container">
 			<!-- Main greeting and name -->
@@ -93,7 +94,6 @@
 				<div class="project-content">
 					<h3>MiniShell</h3>
 					<p>Project focused on creating a custom command-line shell that mimicked key Bash features like command execution and input/output redirection. It required a strong understanding of Unix process management and system calls in C, enhancing skills in low-level systems programming and operating system concepts.</p>
-					<!-- Reusing hyperlink button style -->
 					<a href="#" class="hiperlink-button">
 						View project
 						<img src="Vector.png" alt="External link icon" class="icon">
@@ -113,7 +113,6 @@
 				<div class="project-content">
 					<h3>So_Long</h3>
 					<p>A 2D maze game developed using the mlx library in C, where the player navigates through a maze and collects items. The project involved implementing dynamic memory management, handling user input, and optimizing graphics rendering for smooth gameplay.</p>
-					<!-- Reusing hyperlink button style -->
 					<a href="#" class="hiperlink-button">
 						View project
 						<img src="Vector.png" alt="External link icon" class="icon">
@@ -136,7 +135,7 @@
 				<div class="lower-container">
 					<div>
 						<h3>Ana Luisa Nunan</h3>
-						<h4> Crimonologist & Full-Stack Developer</h4>
+						<h4>Criminologist & Full-Stack Developer</h4>
 					</div>
 					<div>
 						<p>I’m Ana Luisa Nunan, a junior developer at Eduvem and a Computer Engineering student at Bytes 4 Future and 42 Porto. I hold a degree in Criminology, with a focus on white-collar crime and cybercrime, which sparked my interest in technology and digital security.
@@ -149,8 +148,9 @@
 				</div>
 			</div>
 			
-			<!-- Grid de imagens ao lado do card -->
+			<!-- Grid de skills organizadas por categoria -->
 			<div class="skills-grid">
+				<!-- Row 1: System Programming -->
 				<div class="skill-box">
 					<i class="devicon-c-plain"></i>
 				</div>
@@ -160,6 +160,8 @@
 				<div class="skill-box">
 					<i class="devicon-bash-plain"></i>
 				</div>
+				
+				<!-- Row 2: Web Development -->
 				<div class="skill-box">
 					<i class="devicon-html5-plain"></i>
 				</div>
@@ -169,12 +171,16 @@
 				<div class="skill-box">
 					<i class="devicon-javascript-plain"></i>
 				</div>
+				
+				<!-- Row 3: Advanced Technologies -->
 				<div class="skill-box">
 					<i class="devicon-typescript-plain"></i>
 				</div>
 				<div class="skill-box">
 					<i class="devicon-mongodb-plain"></i>
 				</div>
+				
+				<!-- Row 4: Tools & Specialties -->
 				<div class="skill-box">
 					<i class="devicon-vscode-plain"></i>
 				</div>
@@ -191,14 +197,53 @@
 		</div>
 	</section>
 
-	<!-- ============================= FUTURE SECTIONS ============================= -->
-	<!-- TODO: Implement remaining sections -->
-	<!-- 
-		🔸 About me section (#aboutme) - Personal background and story
-		🔸 Technical Skills section (#technical-skills) - Programming languages, tools, etc.
-		🔸 Find me section (#find-me) - Additional contact methods
-		🔸 Contact section (#contact) - Contact form or information
-	-->
+	<!-- ============================= CONTACT SECTION ============================= -->
+	<section id="contact" class="contact-section">
+		<h2>Contact me</h2>
+		<div class="contact-container">
+			<!-- Contact Form -->
+			<div class="contact-form-container">
+				<form class="contact-form">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="subject">Subject</label>
+						<input type="text" id="subject" name="subject" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					<button type="submit" class="contact-btn">Send Message</button>
+				</form>
+			</div>
+			
+			<!-- Contact Information -->
+			<div class="contact-info">
+				<div class="contact-card">
+					<h3>Let's Connect!</h3>
+					<p>Ready to collaborate or just want to say hi? Drop me a message and I'll get back to you as soon as possible.</p>
+					<div class="contact-details">
+						<div class="contact-item">
+							<strong>Email:</strong>
+							<span>analununan@gmail.com</span>
+						</div>
+						<div class="contact-item">
+							<strong>Location:</strong>
+							<span>Porto, Portugal</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!-- ============================= FOOTER ============================= -->
 	<footer>

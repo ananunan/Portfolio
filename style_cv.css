@@ -1,4 +1,8 @@
 /* ============================= GLOBAL RESET & BASE STYLES ============================= */
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -47,6 +51,12 @@ nav a {
 nav a:hover {
 	background-color: black;
 	color: white;
+}
+
+/* Home logo hover effect */
+nav a img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
 }
 
 /* ============================= FOOTER ============================= */
@@ -443,5 +453,154 @@ footer p {
 .skill-box i {
 	font-size: 60px;
 	color: #000000;
+}
+
+/* ============================= CONTACT SECTION ============================= */
+.contact-section {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px 20px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+.contact-section h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.contact-container {
+	display: flex;
+	gap: 40px;
+	align-items: flex-start;
+}
+
+.contact-form-container {
+	flex: 1;
+	background: #F5F5F5;
+	border: 4px solid #000000;
+	box-shadow: 5px 5px 0 #000000;
+	padding: 30px;
+	transition: all 0.3s ease;
+}
+
+.contact-form-container:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 7px 7px 0 #000000;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form-group label {
+	font-weight: 700;
+	font-size: 16px;
+	color: #000000;
+}
+
+.form-group input,
+.form-group textarea {
+	padding: 12px;
+	border: 3px solid #000000;
+	background: #FFFFFF;
+	font-family: "Baloo Thambi 2", system-ui;
+	font-size: 14px;
+	transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	transform: translate(-2px, -2px);
+	box-shadow: 3px 3px 0 #000000;
+}
+
+.contact-btn {
+	background-color: #eb81c8;
+	color: #000000;
+	border: 3px solid #000000;
+	padding: 15px 25px;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "Baloo Thambi 2", system-ui;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 3px 3px 0 #000000;
+}
+
+.contact-btn:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	transform: translate(-2px, -2px);
+	box-shadow: 5px 5px 0 #eb81c8;
+}
+
+.contact-info {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.contact-card {
+	background: #C4C4C4;
+	border: 4px solid #000000;
+	box-shadow: 5px 5px 0 #000000;
+	padding: 30px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.contact-card:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 7px 7px 0 #000000;
+}
+
+.contact-card h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: #000000;
+}
+
+.contact-card p {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 25px;
+	color: #000000;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact-item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 10px;
+	background: #F5F5F5;
+	border: 2px solid #000000;
+}
+
+.contact-item strong {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.contact-item span {
+	font-size: 14px;
 }
 
