@@ -41,10 +41,6 @@ html {
 }
 
 /* ==================== CUSTOM SCROLLBAR (FIREFOX) ==================== */
-html {
-	scrollbar-width: thick;
-	scrollbar-color: #eb81c8 #F5F5F5;
-}
 
 a {
 	text-decoration: none;
