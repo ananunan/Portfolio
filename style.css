@@ -11,7 +11,7 @@ html {
 	box-sizing: border-box;
 }
 
-/* ==================== CUSTOM SCROLLBAR ==================== */
+/* ==================== CUSTOM SCROLLBAR (WEBKIT) ==================== */
 ::-webkit-scrollbar {
 	width: 16px;
 }
@@ -38,6 +38,12 @@ html {
 ::-webkit-scrollbar-corner {
 	background: #F5F5F5;
 	border: 3px solid #000000;
+}
+
+/* ==================== CUSTOM SCROLLBAR (FIREFOX) ==================== */
+html {
+	scrollbar-width: thick;
+	scrollbar-color: #eb81c8 #F5F5F5;
 }
 
 a {
