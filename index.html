@@ -1,87 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- ============================= META & TITLE ============================= -->
+	<!-- ==================== META INFORMATION ==================== -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ana - Portfolio</title>
 	
-	<!-- ============================= EXTERNAL RESOURCES ============================= -->
-	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="style_cv.css">
-	
-	<!-- DevIcons for technology icons -->
+	<!-- ==================== EXTERNAL RESOURCES ==================== -->
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-	
-	<!-- Google Fonts optimization -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<!-- ============================= NAVIGATION BAR ============================= -->
+	<!-- ==================== NAVIGATION ==================== -->
 	<nav>
-		<!-- Home logo/button -->
 		<a href="#home">
 			<img src="Home Button.png" alt="Home" style="height: 40px;">
 		</a>
-		
-		<!-- Main navigation links -->
 		<a href="#projects">Projects</a>
 		<a href="#aboutme">About me</a>
 		<a href="#contact">Contact</a>
 	</nav>
 
-	<!-- ============================= HERO/LANDING SECTION ============================= -->
+	<!-- ==================== HERO SECTION ==================== -->
 	<section id="home" class="welcome-text">
-		<!-- Left side: Main content -->
 		<div class="hero-container">
-			<!-- Main greeting and name -->
 			<h1>&lt;Hello/&gt;<br>I'm Ana.</h1>
-			
-			<!-- Professional tagline -->
 			<p>Criminology grad exploring programming and tech *>*</p>
-			
-			<!-- Action button (TODO: Add CV file download functionality) -->
-			<button class="btm">Download my CV</button>
-			
-			<!-- Section label -->
+			<button class="btn">Download my CV</button>
 			<a>Quick Links</a>
 		</div>
-		
-		<!-- Right side: Profile image -->
 		<div class="image-hero-container">
 			<img src="Home_Photo.png" alt="Ana's profile photo" width="400" height="400">
 		</div>
 	</section>
 
-	<!-- ============================= SOCIAL LINKS OVERLAY ============================= -->
+	<!-- ==================== SOCIAL LINKS ==================== -->
 	<div class="links-container">
-		<!-- LinkedIn profile -->
 		<a class="hiperlink-button" href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer">
 			LinkedIn
 			<img src="Vector.png" alt="LinkedIn icon" class="icon">
 		</a>
-		
-		<!-- GitHub profile -->
 		<a class="hiperlink-button" href="https://github.com/ananunan" target="_blank" rel="noopener noreferrer">
 			GitHub
 			<img src="Vector.png" alt="GitHub icon" class="icon">
 		</a>
-		
-		<!-- Contact link (TODO: Create contact section/page) -->
-		<a class="hiperlink-button" href="#contact" target="_blank" rel="noopener noreferrer">
+		<a class="hiperlink-button" href="#contact">
 			Contact
 			<img src="Vector.png" alt="Contact icon" class="icon">
 		</a>
 	</div>
 
-	<!-- ============================= PROJECTS SECTION ============================= -->
+	<!-- ==================== PROJECTS SECTION ==================== -->
 	<section id="projects" class="projects-section">
 		<h2>Projects</h2>
 		<div class="projects-container">
-			
 			<!-- MiniShell Project -->
 			<div class="project-box">
 				<div class="project-header">
@@ -113,7 +89,7 @@
 				<div class="project-content">
 					<h3>So_Long</h3>
 					<p>A 2D maze game developed using the mlx library in C, where the player navigates through a maze and collects items. The project involved implementing dynamic memory management, handling user input, and optimizing graphics rendering for smooth gameplay.</p>
-					<a href="#" class="hiperlink-button">
+					<a href="https://github.com/ananunan/42-So_Long" target="_blank" rel="noopener noreferrer" class="hiperlink-button">
 						View project
 						<img src="Vector.png" alt="External link icon" class="icon">
 					</a>
@@ -122,10 +98,11 @@
 		</div>
 	</section>
 
-	<!-- ============================= ABOUT ME SECTION ============================= -->
+	<!-- ==================== ABOUT ME SECTION ==================== -->
 	<section id="aboutme" class="aboutme-section">
 		<h2>About me</h2>
 		<div class="aboutme-container">
+			<!-- Profile Card -->
 			<div class="card-container">
 				<div class="upper-container">
 					<div class="image-container">
@@ -138,66 +115,40 @@
 						<h4>Criminologist & Full-Stack Developer</h4>
 					</div>
 					<div>
-						<p>I’m Ana Luisa Nunan, a junior developer at Eduvem and a Computer Engineering student at Bytes 4 Future and 42 Porto. I hold a degree in Criminology, with a focus on white-collar crime and cybercrime, which sparked my interest in technology and digital security.
-							I also work as a STEAM instructor, designing creative, hands-on learning experiences for children.
-							My background includes web development, Unix-based systems, and AI-powered content creation, blending analytical thinking with education and innovation.</p>
+						<p>I'm Ana Luisa Nunan, a junior developer at Eduvem and a Computer Engineering student at Bytes 4 Future and 42 Porto. I hold a degree in Criminology, with a focus on white-collar crime and cybercrime, which sparked my interest in technology and digital security. I also work as a STEAM instructor, designing creative, hands-on learning experiences for children. My background includes web development, Unix-based systems, and AI-powered content creation, blending analytical thinking with education and innovation.</p>
 					</div>
 					<div>
-						<a href="#contact" class="btn">Get in touch</a>
+						<a href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer" class="btn">Get in touch</a>
 					</div>
 				</div>
 			</div>
 			
-			<!-- Grid de skills organizadas por categoria -->
+			<!-- Skills Grid -->
 			<div class="skills-grid">
-				<!-- Row 1: System Programming -->
-				<div class="skill-box">
-					<i class="devicon-c-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-cplusplus-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-bash-plain"></i>
-				</div>
+				<!-- System Programming -->
+				<div class="skill-box"><i class="devicon-c-plain"></i></div>
+				<div class="skill-box"><i class="devicon-cplusplus-plain"></i></div>
+				<div class="skill-box"><i class="devicon-bash-plain"></i></div>
 				
-				<!-- Row 2: Web Development -->
-				<div class="skill-box">
-					<i class="devicon-html5-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-css3-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-javascript-plain"></i>
-				</div>
+				<!-- Web Development -->
+				<div class="skill-box"><i class="devicon-html5-plain"></i></div>
+				<div class="skill-box"><i class="devicon-css3-plain"></i></div>
+				<div class="skill-box"><i class="devicon-javascript-plain"></i></div>
 				
-				<!-- Row 3: Advanced Technologies -->
-				<div class="skill-box">
-					<i class="devicon-typescript-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-mongodb-plain"></i>
-				</div>
+				<!-- Advanced Technologies -->
+				<div class="skill-box"><i class="devicon-typescript-plain"></i></div>
+				<div class="skill-box"><i class="devicon-mongodb-plain"></i></div>
 				
-				<!-- Row 4: Tools & Specialties -->
-				<div class="skill-box">
-					<i class="devicon-vscode-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-github-original"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-linux-plain"></i>
-				</div>
-				<div class="skill-box">
-					<i class="devicon-spss-plain"></i>
-				</div>
+				<!-- Tools & Specialties -->
+				<div class="skill-box"><i class="devicon-vscode-plain"></i></div>
+				<div class="skill-box"><i class="devicon-github-original"></i></div>
+				<div class="skill-box"><i class="devicon-linux-plain"></i></div>
+				<div class="skill-box"><i class="devicon-spss-plain"></i></div>
 			</div>
 		</div>
 	</section>
 
-	<!-- ============================= CONTACT SECTION ============================= -->
+	<!-- ==================== CONTACT SECTION ==================== -->
 	<section id="contact" class="contact-section">
 		<h2>Contact me</h2>
 		<div class="contact-container">
@@ -244,11 +195,9 @@
 		</div>
 	</section>
 
-
-	<!-- ============================= FOOTER ============================= -->
+	<!-- ==================== FOOTER ==================== -->
 	<footer>
 		<p>&copy; Ana Luisa Nunan - 2025</p>
 	</footer>
-
 </body>
 </html>
