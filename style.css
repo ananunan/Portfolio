@@ -1,7 +1,6 @@
 /* ==================== GLOBAL RESET & BASE STYLES ==================== */
 html {
 	scroll-behavior: smooth;
-	overflow-y: scroll;
 }
 
 * {
@@ -11,7 +10,7 @@ html {
 	box-sizing: border-box;
 }
 
-/* ==================== CUSTOM SCROLLBAR (WEBKIT) ==================== */
+/* ==================== CUSTOM SCROLLBAR ==================== */
 ::-webkit-scrollbar {
 	width: 16px;
 }
@@ -40,8 +39,6 @@ html {
 	border: 3px solid #000000;
 }
 
-/* ==================== CUSTOM SCROLLBAR (FIREFOX) ==================== */
-
 a {
 	text-decoration: none;
 	color: black;
@@ -51,7 +48,7 @@ body {
 	background-color: #F5F5F5;
 	border: 10px solid black;
 	margin: 5px;
-	min-height: 100vh;
+	height: 100%;
 }
 
 /* ==================== NAVIGATION BAR ==================== */
