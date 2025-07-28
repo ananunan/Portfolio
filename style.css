@@ -4,11 +4,39 @@ html {
 }
 
 * {
-	padding: 0;
 	margin: 0;
 	font-family: "Baloo Thambi 2", system-ui;
 	font-optical-sizing: auto;
 	box-sizing: border-box;
+}
+
+/* ==================== CUSTOM SCROLLBAR ==================== */
+::-webkit-scrollbar {
+	width: 16px;
+}
+
+::-webkit-scrollbar-track {
+	background: #F5F5F5;
+	border: 3px solid #000000;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #eb81c8;
+	border: 3px solid #000000;
+	border-radius: 0;
+	box-shadow: 3px 3px 0px #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #C4C4C4;
+	transform: translate(-1px, -1px);
+	box-shadow: 4px 4px 0px #000000;
+}
+
+::-webkit-scrollbar-corner {
+	background: #F5F5F5;
+	border: 3px solid #000000;
 }
 
 a {
@@ -67,7 +95,7 @@ nav a img {
 
 .hero-container {
 	width: 330px;
-	height: 300px;
+	height: 330px;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -78,6 +106,34 @@ nav a img {
 	text-align: left;
 	font-size: 70px;
 	line-height: 60px;
+	margin-bottom: 0;
+}
+
+/* ==================== TYPEWRITER EFFECT ==================== */
+.typewriter {
+	overflow: hidden;
+	border-right: .15em solid #eb81c8;
+	white-space: nowrap;
+	margin: 0;
+	letter-spacing: 0.05em;
+	text-align: left;
+	font-size: 70px;
+	line-height: 60px;
+	width: 0;
+	animation: 
+		typing 4s steps(30, end) forwards,
+		blink-caret 0.75s step-end 6;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: #eb81c8; }
 }
 
 .hero-container p {
@@ -85,6 +141,7 @@ nav a img {
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 500;
+	margin-top: 10px;
 }
 
 .hero-container a {
@@ -97,6 +154,20 @@ nav a img {
 	justify-content: flex-start;
 	margin-top: 50px;
 	margin-left: 90px;
+}
+
+/* ==================== HERO IMAGE CONTAINER ==================== */
+.image-hero-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-hero-container img {
+	width: 405px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 10px;
 }
 
 /* ==================== SOCIAL LINKS ==================== */
@@ -135,8 +206,10 @@ nav a img {
 }
 
 .btn:hover {
-	background-color: black;
+	background-color: #eb81c8;
 	color: white;
+	transform: translateY(-4px);
+	box-shadow: 0 6px 0 #000000;
 }
 
 .hiperlink-button {
@@ -155,8 +228,10 @@ nav a img {
 }
 
 .hiperlink-button:hover {
-	background-color: black;
+	background-color: #eb81c8;
 	color: white;
+	transform: translateY(-4px);
+	box-shadow: 0 6px 0 #000000;
 }
 
 .hiperlink-button:hover img {
@@ -512,8 +587,8 @@ nav a img {
 .contact-btn:hover {
 	background-color: #000000;
 	color: #FFFFFF;
-	transform: translate(-2px, -2px);
-	box-shadow: 5px 5px 0 #eb81c8;
+	transform: translateY(-4px);
+	box-shadow: 0 6px 0 #eb81c8;
 }
 
 .contact-info {

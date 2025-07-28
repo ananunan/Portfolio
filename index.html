@@ -28,13 +28,13 @@
 	<!-- ==================== HERO SECTION ==================== -->
 	<section id="home" class="welcome-text">
 		<div class="hero-container">
-			<h1>&lt;Hello/&gt;<br>I'm Ana.</h1>
+			<h1 class="typewriter">&lt;Hello/&gt;<br>I'm Ana.</h1>
 			<p>Criminology grad exploring programming and tech *>*</p>
 			<button class="btn">Download my CV</button>
 			<a>Quick Links</a>
 		</div>
 		<div class="image-hero-container">
-			<img src="Home_Photo.png" alt="Ana's profile photo" width="400" height="400">
+			<img id="hero-image" src="Home_Photo.png" alt="Ana's profile photo" width="400" height="400">
 		</div>
 	</section>
 
@@ -199,5 +199,26 @@
 	<footer>
 		<p>&copy; Ana Luisa Nunan - 2025</p>
 	</footer>
+
+	<!-- ==================== JAVASCRIPT ==================== -->
+	<script>
+		// Aguarda o carregamento completo da página
+		window.addEventListener('load', function() {
+			// Aguarda mais 500ms para garantir que tudo carregou
+			setTimeout(function() {
+				const heroImage = document.getElementById('hero-image');
+				if (heroImage) {
+					// Cria uma versão única do GIF para forçar reload e rodar apenas uma vez
+					const timestamp = new Date().getTime();
+					heroImage.src = 'Home_GIF.gif?' + timestamp;
+					
+					// Opcional: volta para imagem estática após um tempo (se você souber a duração do GIF)
+					 setTimeout(function() {
+							heroImage.src = 'Home_Photo.png';
+					 }, 3000); // 3 segundos - ajuste conforme a duração do seu GIF
+				}
+			}, 500);
+		});
+	</script>
 </body>
 </html>
