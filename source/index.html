@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- ==================== META INFORMATION ==================== -->
+	<!-- Meta information -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ana - Portfolio</title>
 	
-	<!-- ==================== EXTERNAL RESOURCES ==================== -->
+	<!-- External resources -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,98 +15,100 @@
 </head>
 
 <body>
-	<!-- ==================== NAVIGATION ==================== -->
-	<nav>
-		<a href="#home">
-			<img src="Home Button.png" alt="Home" style="height: 40px;">
-		</a>
-		<a href="#projects">Projects</a>
-		<a href="#aboutme">About me</a>
-		<a href="#contact">Contact</a>
-	</nav>
+	<!-- Header with navigation -->
+	<header>
+		<nav>
+			<a href="#home">
+				<img src="../assets/homeButton.png" alt="Home" style="height: 40px;">
+			</a>
+			<a href="#projects">Projects</a>
+			<a href="#aboutme">About me</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
 
-	<!-- ==================== HERO SECTION ==================== -->
-	<section id="home" class="welcome-text">
-		<div class="hero-container">
-			<h1 class="typewriter">&lt;Hello/&gt;<br>I'm Ana.</h1>
-			<p>Criminology grad exploring programming and tech *>*</p>
-			<button class="btn">Download my CV</button>
-			<a>Quick Links</a>
-		</div>
-		<div class="image-hero-container">
-			<img id="hero-image" src="Home_Photo.png" alt="Ana's profile photo" width="400" height="400">
-		</div>
-	</section>
+		<main>
+		<!-- Hero section -->
+			<section id="home" class="welcome-text">
+				<div class="hero-container">
+					<h1 class="typewriter">&lt;Hello/&gt;<br>I'm Ana.</h1>
+					 <p>Criminology grad exploring programming and tech *>*</p>
+					<button class="btn"><a href="../assets/Resume.pdf" download style="all:unset;color:inherit;">Download my CV</a></button>
+					<a>Quick Links</a>
+				</div>
+				<div class="image-hero-container">
+					<img id="hero-image" src="../assets/homeGif.gif" alt="Ana's profile photo" width="400" height="400">
+				</div>
+				<!-- Social links -->
+				<div class="links-container">
+					<a class="hiperlink-button" href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer">
+						LinkedIn
+						<img src="../assets/vector.png" alt="LinkedIn icon" class="icon">
+					</a>
+					<a class="hiperlink-button" href="https://github.com/ananunan" target="_blank" rel="noopener noreferrer">
+						GitHub
+						<img src="../assets/vector.png" alt="GitHub icon" class="icon">
+					</a>
+					<a class="hiperlink-button" href="#contact">
+						Contact
+						<img src="../assets/vector.png" alt="Contact icon" class="icon">
+					</a>
+				</div>
+			</section>
 
-	<!-- ==================== SOCIAL LINKS ==================== -->
-	<div class="links-container">
-		<a class="hiperlink-button" href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer">
-			LinkedIn
-			<img src="Vector.png" alt="LinkedIn icon" class="icon">
-		</a>
-		<a class="hiperlink-button" href="https://github.com/ananunan" target="_blank" rel="noopener noreferrer">
-			GitHub
-			<img src="Vector.png" alt="GitHub icon" class="icon">
-		</a>
-		<a class="hiperlink-button" href="#contact">
-			Contact
-			<img src="Vector.png" alt="Contact icon" class="icon">
-		</a>
-	</div>
-
-	<!-- ==================== PROJECTS SECTION ==================== -->
-	<section id="projects" class="projects-section">
-		<h2>Projects</h2>
-		<div class="projects-container">
-			<!-- MiniShell Project -->
+			<!-- Projects section -->
+			<section id="projects" class="projects-section">
+				<h2>Projects</h2>
+				<div class="projects-container">
+			<!-- MiniShell project card -->
 			<div class="project-box">
 				<div class="project-header">
-					<img src="littlebtm.png" alt="Little BTM">
-					<span>2025-05-31-minishell/a.out</span>
+					<img src="../assets/littleBtm.png" alt="Little BTM">
+					<span>2025-05-31-minishell.c</span>
 				</div>
 				<div class="project-image">
-					<img src="minishell.png" alt="MiniShell terminal preview">
+					<img src="../assets/miniShell.png" alt="MiniShell terminal preview">
 				</div>
 				<div class="project-content">
 					<h3>MiniShell</h3>
 					<p>Project focused on creating a custom command-line shell that mimicked key Bash features like command execution and input/output redirection. It required a strong understanding of Unix process management and system calls in C, enhancing skills in low-level systems programming and operating system concepts.</p>
-					<a href="#" class="hiperlink-button">
+					<a href="https://github.com/rodrigo-fari/42-minihell" target="_blank" rel="noopener noreferrer" class="hiperlink-button">
 						View project
-						<img src="Vector.png" alt="External link icon" class="icon">
+						<img src="../assets/vector.png" alt="External link icon" class="icon">
 					</a>
 				</div>
 			</div>
 
-			<!-- So_Long Project -->
+			<!-- So_Long project card -->
 			<div class="project-box">
 				<div class="project-header">
-					<img src="littlebtm.png" alt="Little BTM">
+					<img src="../assets/littleBtm.png" alt="Little BTM">
 					<span>2024-10-03-so_long.c</span>
 				</div>
 				<div class="project-image">
-					<img src="so_long.png" alt="So_Long game preview">
+					<img src="../assets/soLong.png" alt="So_Long game preview">
 				</div>
 				<div class="project-content">
 					<h3>So_Long</h3>
 					<p>A 2D maze game developed using the mlx library in C, where the player navigates through a maze and collects items. The project involved implementing dynamic memory management, handling user input, and optimizing graphics rendering for smooth gameplay.</p>
 					<a href="https://github.com/ananunan/42-So_Long" target="_blank" rel="noopener noreferrer" class="hiperlink-button">
 						View project
-						<img src="Vector.png" alt="External link icon" class="icon">
+						<img src="../assets/vector.png" alt="External link icon" class="icon">
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- ==================== ABOUT ME SECTION ==================== -->
-	<section id="aboutme" class="aboutme-section">
-		<h2>About me</h2>
-		<div class="aboutme-container">
-			<!-- Profile Card -->
+			<!-- About me section -->
+			<section id="aboutme" class="aboutme-section">
+				<h2>About me</h2>
+				<div class="aboutme-container">
+			<!-- Profile card -->
 			<div class="card-container">
 				<div class="upper-container">
 					<div class="image-container">
-						<img src="Profile_Photo.jpg" alt="Ana's profile photo" />
+						<img src="../assets/profilePhoto.jpg" alt="Ana's profile photo" />
 					</div>
 				</div>
 				<div class="lower-container">
@@ -123,7 +125,7 @@
 				</div>
 			</div>
 			
-			<!-- Skills Grid -->
+			<!-- Skills grid -->
 			<div class="skills-grid">
 				<!-- System Programming -->
 				<div class="skill-box"><i class="devicon-c-plain"></i></div>
@@ -148,13 +150,13 @@
 		</div>
 	</section>
 
-	<!-- ==================== CONTACT SECTION ==================== -->
-	<section id="contact" class="contact-section">
-		<h2>Contact me</h2>
-		<div class="contact-container">
-			<!-- Contact Form -->
+			<!-- Contact section -->
+			<section id="contact" class="contact-section">
+				<h2>Contact me</h2>
+				<div class="contact-container">
+			<!-- Contact form -->
 			<div class="contact-form-container">
-				<form class="contact-form">
+				<form action="https://formspree.io/f/mblkqagg" method="POST" class="contact-form">
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input type="text" id="name" name="name" required>
@@ -171,11 +173,11 @@
 						<label for="message">Message</label>
 						<textarea id="message" name="message" rows="5" required></textarea>
 					</div>
-					<button type="submit" class="contact-btn">Send Message</button>
+					<button type="submit" class="contact-btn">Send</button>
 				</form>
 			</div>
 			
-			<!-- Contact Information -->
+			<!-- Contact information -->
 			<div class="contact-info">
 				<div class="contact-card">
 					<h3>Let's Connect!</h3>
@@ -193,29 +195,29 @@
 				</div>
 			</div>
 		</div>
-	</section>
+		</section>
 
-	<!-- ==================== FOOTER ==================== -->
-	<footer>
-		<p>&copy; Ana Luisa Nunan - 2025</p>
-	</footer>
+			<!-- Footer -->
+			<footer>
+				<p>&copy; Ana Luisa Nunan - 2025</p>
+			</footer>
+		</main>
 
-	<!-- ==================== JAVASCRIPT ==================== -->
+	<!-- JavaScript for hero GIF animation -->
 	<script>
-		// Aguarda o carregamento completo da página
+		// Wait for page to load
 		window.addEventListener('load', function() {
-			// Aguarda mais 500ms para garantir que tudo carregou
+			// Wait 500ms to ensure everything is loaded
 			setTimeout(function() {
 				const heroImage = document.getElementById('hero-image');
 				if (heroImage) {
-					// Cria uma versão única do GIF para forçar reload e rodar apenas uma vez
+					// Force GIF reload and play only once
 					const timestamp = new Date().getTime();
-					heroImage.src = 'Home_GIF.gif?' + timestamp;
-					
-					// Opcional: volta para imagem estática após um tempo (se você souber a duração do GIF)
-					 setTimeout(function() {
-							heroImage.src = 'Home_Photo.png';
-					 }, 3000); // 3 segundos - ajuste conforme a duração do seu GIF
+					heroImage.src = '../assets/homeGif.gif?' + timestamp;
+					// Optionally revert to static image after GIF duration
+					setTimeout(function() {
+						heroImage.src = '../assets/homePhoto.png';
+					}, 3000); // 3 seconds - adjust to your GIF duration
 				}
 			}, 500);
 		});
