@@ -19,7 +19,7 @@
 	<header>
 		<nav>
 			<a href="#home">
-				<img src="../assets/homeButton.png" alt="Home" style="height: 40px;">
+				<img src="assets/homeButton.png" alt="Home" style="height: 40px;">
 			</a>
 			<a href="#projects">Projects</a>
 			<a href="#aboutme">About me</a>
@@ -33,25 +33,25 @@
 				<div class="hero-container">
 					<h1 class="typewriter">&lt;Hello/&gt;<br>I'm Ana.</h1>
 					 <p>Criminology grad exploring programming and tech *>*</p>
-					<button class="btn"><a href="../assets/Resume.pdf" download style="all:unset;color:inherit;">Download my CV</a></button>
+					<button class="btn"><a href="assets/Resume.pdf" download style="all:unset;color:inherit;">Download my CV</a></button>
 					<a>Quick Links</a>
 				</div>
 				<div class="image-hero-container">
-					<img id="hero-image" src="../assets/homeGif.gif" alt="Ana's profile photo" width="400" height="400">
+					<img id="hero-image" src="assets/homeGif.gif" alt="Ana's profile photo" width="400" height="400">
 				</div>
 				<!-- Social links -->
 				<div class="links-container">
 					<a class="hiperlink-button" href="https://www.linkedin.com/in/analuisanunan/" target="_blank" rel="noopener noreferrer">
 						LinkedIn
-						<img src="../assets/vector.png" alt="LinkedIn icon" class="icon">
+						<img src="assets/vector.png" alt="LinkedIn icon" class="icon">
 					</a>
 					<a class="hiperlink-button" href="https://github.com/ananunan" target="_blank" rel="noopener noreferrer">
 						GitHub
-						<img src="../assets/vector.png" alt="GitHub icon" class="icon">
+						<img src="assets/vector.png" alt="GitHub icon" class="icon">
 					</a>
 					<a class="hiperlink-button" href="#contact">
 						Contact
-						<img src="../assets/vector.png" alt="Contact icon" class="icon">
+						<img src="assets/vector.png" alt="Contact icon" class="icon">
 					</a>
 				</div>
 			</section>
@@ -63,18 +63,18 @@
 			<!-- MiniShell project card -->
 			<div class="project-box">
 				<div class="project-header">
-					<img src="../assets/littleBtm.png" alt="Little BTM">
+					<img src="assets/littleBtm.png" alt="Little BTM">
 					<span>2025-05-31-minishell.c</span>
 				</div>
 				<div class="project-image">
-					<img src="../assets/miniShell.png" alt="MiniShell terminal preview">
+					<img src="assets/miniShell.png" alt="MiniShell terminal preview">
 				</div>
 				<div class="project-content">
 					<h3>MiniShell</h3>
 					<p>Project focused on creating a custom command-line shell that mimicked key Bash features like command execution and input/output redirection. It required a strong understanding of Unix process management and system calls in C, enhancing skills in low-level systems programming and operating system concepts.</p>
 					<a href="https://github.com/rodrigo-fari/42-minihell" target="_blank" rel="noopener noreferrer" class="hiperlink-button">
 						View project
-						<img src="../assets/vector.png" alt="External link icon" class="icon">
+						<img src="assets/vector.png" alt="External link icon" class="icon">
 					</a>
 				</div>
 			</div>
@@ -82,18 +82,18 @@
 			<!-- So_Long project card -->
 			<div class="project-box">
 				<div class="project-header">
-					<img src="../assets/littleBtm.png" alt="Little BTM">
+					<img src="assets/littleBtm.png" alt="Little BTM">
 					<span>2024-10-03-so_long.c</span>
 				</div>
 				<div class="project-image">
-					<img src="../assets/soLong.png" alt="So_Long game preview">
+					<img src="assets/soLong.png" alt="So_Long game preview">
 				</div>
 				<div class="project-content">
 					<h3>So_Long</h3>
 					<p>A 2D maze game developed using the mlx library in C, where the player navigates through a maze and collects items. The project involved implementing dynamic memory management, handling user input, and optimizing graphics rendering for smooth gameplay.</p>
 					<a href="https://github.com/ananunan/42-So_Long" target="_blank" rel="noopener noreferrer" class="hiperlink-button">
 						View project
-						<img src="../assets/vector.png" alt="External link icon" class="icon">
+						<img src="assets/vector.png" alt="External link icon" class="icon">
 					</a>
 				</div>
 			</div>
@@ -108,7 +108,7 @@
 			<div class="card-container">
 				<div class="upper-container">
 					<div class="image-container">
-						<img src="../assets/profilePhoto.jpg" alt="Ana's profile photo" />
+						<img src="assets/profilePhoto.jpg" alt="Ana's profile photo" />
 					</div>
 				</div>
 				<div class="lower-container">
@@ -213,10 +213,10 @@
 				if (heroImage) {
 					// Force GIF reload and play only once
 					const timestamp = new Date().getTime();
-					heroImage.src = '../assets/homeGif.gif?' + timestamp;
+					heroImage.src = 'assets/homeGif.gif?' + timestamp;
 					// Optionally revert to static image after GIF duration
 					setTimeout(function() {
-						heroImage.src = '../assets/homePhoto.png';
+						heroImage.src = 'assets/homePhoto.png';
 					}, 3000); // 3 seconds - adjust to your GIF duration
 				}
 			}, 500);
